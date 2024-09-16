@@ -5,34 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>weather app</title>
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <header>
-      <input type="text" placeholder="Enter city" required />
-      <input type="submit" value="search" />
-    </header>
-    <main>
-      <p>Nairobi, Kenya <br />Monday 16 sept <br />☀️ 21°c</p>
-    </main>
-    <footer>
-      <p>
-        This project was coded by
-        <a href="https://github.com/Wanjiku-Gichia" target="_blank"
-          >Wanjiku Gichia,</a
-        >
-        is open-sourced on
-        <a
-          href="https://github.com/Wanjiku-Gichia/SheCodes-weather-app-project"
-          target="_blank"
-          >Github</a
-        >
-        and hosted on
-        <a
-          href="https://endearing-stroopwafel-52abb5.netlify.app/"
-          target="_blank"
-          >Netlify.</a
-        >
-      </p>
-    </footer>
+    <div class="weather-app">
+      <header>
+        <input
+          type="text"
+          class="search-city"
+          placeholder="Enter city"
+          required
+        />
+        <input type="submit" value="search" class="search-button" />
+      </header>
+      <main>
+        <span class="current-weather-info">
+          <div class="left">
+            <h1>Nairobi, Kenya</h1>
+            <br />
+            <h2>Monday 16 Sept <br />☀️ 21°c</h2>
+          </div>
+          <div class="right">
+            <div class="colunm 1">
+              <p>
+                23°<br />
+                high
+              </p>
+              <p>14°c <br />low</p>
+            </div>
+          </div>
+          <div class="column 2">
+            <p>7mph <br />wind</p>
+            <p>0% <br />rain</p>
+          </div>
+        </span>
+        <p>next 5 days</p>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/Wanjiku-Gichia" target="_blank"
+            >Wanjiku Gichia,</a
+          >
+          is open-sourced on
+          <a
+            href="https://github.com/Wanjiku-Gichia/SheCodes-weather-app-project"
+            target="_blank"
+            >Github</a
+          >
+          and hosted on
+          <a
+            href="https://endearing-stroopwafel-52abb5.netlify.app/"
+            target="_blank"
+            >Netlify.</a
+          >
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
