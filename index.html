@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>weather app</title>
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="weather-app">
@@ -24,9 +25,10 @@
       <main>
         <span class="current-weather-info">
           <div class="left">
-            <h1 id="current-city">Nairobi, Kenya</h1>
+            <h1 id="current-city"></h1>
             <br />
-            <h2>Monday 16 Sept <br />☀️ 21°c</h2>
+            <h2>Monday 16 Sept</h2>
+            <h3 id>☀️ <strong id="temperature"></strong>°c</h3>
           </div>
           <div class="right">
             <div class="colunm 1">
