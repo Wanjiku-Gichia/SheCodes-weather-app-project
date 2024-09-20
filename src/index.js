@@ -8,12 +8,14 @@ function updatedTemperature(response) {
   let humidity = document.querySelector("#humidity");
   let currentTime = document.querySelector("#current-time");
   let date = new Date(response.data.time * 1000);
+  let icon = document.querySelector("#icon");
   currentCity.innerHTML = response.data.city;
   temperature.innerHTML = Math.round(temperatureValue);
   description.innerHTML = response.data.condition.description;
   windSpeed.innerHTML = `${Math.round(speedOfWind)} km/h <br/> wind`;
-  humidity.innerHTML = `${response.data.temperature.humidity} <br/> humidity`;
+  humidity.innerHTML = `${response.data.temperature.humidity} %<br/> humidity`;
   currentTime.innerHTML = dateFormat(date);
+  icon.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
 function dateFormat(date) {
   let days = [
