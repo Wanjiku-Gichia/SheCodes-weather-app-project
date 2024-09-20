@@ -17,7 +17,7 @@ h3 {
   margin: 0;
   padding: 0;
   text-align: left;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 footer {
@@ -32,6 +32,9 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+.current-weather-info p {
+  font-size: 20px;
 }
 .weather-app {
   background: rgba(0, 0, 0, 0.6);
