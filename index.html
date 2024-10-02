@@ -30,142 +30,29 @@
             <h2 id="current-time"></h2>
             <h3>
               <span id="icon"></span>
-              <strong id="temperature"></strong>°c
+              <strong id="temperature"></strong>°
             </h3>
             <p id="description"></p>
           </div>
           <div class="right">
-            <div class="colunm 1">
-              <p id="highestTemperature">
-                23°<br />
-                high
+            <div class="column1">
+              <p>
+                <span id="highestTemperatureValue"></span>° <br />
+                <span class="highestTemperatureLabel">High</span>
               </p>
-              <p id="lowestTemperature">14°c <br />low</p>
+              <p>
+                <span id="lowestTemperatureValue"></span>° <br />
+                <span class="lowestTemperatureLabel">Low</span>
+              </p>
             </div>
-          </div>
-          <div class="column 2">
-            <p id="windSpeed"></p>
-            <p id="humidity"></p>
+            <div class="column2">
+              <p id="windSpeed"></p>
+              <p id="humidity"></p>
+            </div>
           </div>
         </div>
         <p>next 5 days</p>
-        <div class="weatherForecastContainer">
-          <div class="weatherForecast">
-            <span class="day">
-              <span class="dayOfWeek">Tue</span><br />
-              <span class="date">30/7</span>
-            </span>
-            <span class="emoji">☀️</span>
-            <span class="forecastLowTemperature">
-              <span class="lowValue">10°</span><br />
-              <span class="lowLabel">low</span>
-            </span>
-            <span class="forecastHighTemperature">
-              <span class="highValue">21°</span><br />
-              <span class="highLabel">high</span>
-            </span>
-            <span class="forecastWindSpeed">
-              <span class="windValue">12Km/h</span><br />
-              <span class="windLabel">wind</span>
-            </span>
-            <span class="forecastHumidity">
-              <span class="humidityValue">0%</span><br />
-              <span class="humidityLabel">humidity</span>
-            </span>
-          </div>
-          <div class="weatherForecast">
-            <span class="day">
-              <span class="dayOfWeek">Wed</span><br />
-              <span class="date">30/7</span>
-            </span>
-            <span class="emoji">☀️</span>
-            <span class="forecastLowTemperature">
-              <span class="lowValue">10°</span><br />
-              <span class="lowLabel">low</span>
-            </span>
-            <span class="forecastHighTemperature">
-              <span class="highValue">21°</span><br />
-              <span class="highLabel">high</span>
-            </span>
-            <span class="forecastWindSpeed">
-              <span class="windValue">12Km/h</span><br />
-              <span class="windLabel">wind</span>
-            </span>
-            <span class="forecastHumidity">
-              <span class="humidityValue">0%</span><br />
-              <span class="humidityLabel">humidity</span>
-            </span>
-          </div>
-          <div class="weatherForecast">
-            <span class="day">
-              <span class="dayOfWeek">Thur</span><br />
-              <span class="date">30/7</span>
-            </span>
-            <span class="emoji">☀️</span>
-            <span class="forecastLowTemperature">
-              <span class="lowValue">10°</span><br />
-              <span class="lowLabel">low</span>
-            </span>
-            <span class="forecastHighTemperature">
-              <span class="highValue">21°</span><br />
-              <span class="highLabel">high</span>
-            </span>
-            <span class="forecastWindSpeed">
-              <span class="windValue">12Km/h</span><br />
-              <span class="windLabel">wind</span>
-            </span>
-            <span class="forecastHumidity">
-              <span class="humidityValue">0%</span><br />
-              <span class="humidityLabel">humidity</span>
-            </span>
-          </div>
-          <div class="weatherForecast">
-            <span class="day">
-              <span class="dayOfWeek">Fri</span><br />
-              <span class="date">30/7</span>
-            </span>
-            <span class="emoji">☀️</span>
-            <span class="forecastLowTemperature">
-              <span class="lowValue">10°</span><br />
-              <span class="lowLabel">low</span>
-            </span>
-            <span class="forecastHighTemperature">
-              <span class="highValue">21°</span><br />
-              <span class="highLabel">high</span>
-            </span>
-            <span class="forecastWindSpeed">
-              <span class="windValue">12Km/h</span><br />
-              <span class="windLabel">wind</span>
-            </span>
-            <span class="forecastHumidity">
-              <span class="humidityValue">0%</span><br />
-              <span class="humidityLabel">humidity</span>
-            </span>
-          </div>
-          <div class="weatherForecast">
-            <span class="day">
-              <span class="dayOfWeek">Sat</span><br />
-              <span class="date">30/7</span>
-            </span>
-            <span class="emoji">☀️</span>
-            <span class="forecastLowTemperature">
-              <span class="lowValue">10°</span><br />
-              <span class="lowLabel">low</span>
-            </span>
-            <span class="forecastHighTemperature">
-              <span class="highValue">21°</span><br />
-              <span class="highLabel">high</span>
-            </span>
-            <span class="forecastWindSpeed">
-              <span class="windValue">12Km/h</span><br />
-              <span class="windLabel">wind</span>
-            </span>
-            <span class="forecastHumidity">
-              <span class="humidityValue">0%</span><br />
-              <span class="humidityLabel">humidity</span>
-            </span>
-          </div>
-        </div>
+        <div class="weatherForecastContainer" id="weatherForecast"></div>
       </main>
       <footer>
         <p>
